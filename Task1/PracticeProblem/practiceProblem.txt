@@ -1,0 +1,5 @@
+1.Basic XMLHttpRequest:
+
+Create a simple HTML page with a button.
+Use the XMLHttpRequest object to fetch data from a public API when the button is clicked.
+Display the retrieved data on the page.

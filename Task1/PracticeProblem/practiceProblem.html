@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Loading</p>
+    <button onclick="LoadData()">ClickMe</button>
+
+    <script >
+        function LoadData()
+        {
+            var Xhttp=new XMLHttpRequest();
+                Xhttp.onreadystatechange=function()
+                {
+                if(this.readyState==4&&this.status==200)
+                    {
+                     document.getElementById("demo").innerHTML=this.responseText;
+                     
+                    }
+                }
+
+                Xhttp.open("GET","practiceProblem.txt",true);
+                Xhttp.send();
+        }
+    </script>
+</body>
+</html>
